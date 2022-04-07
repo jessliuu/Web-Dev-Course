@@ -24,3 +24,39 @@ function validUserNames(usernames) {
 }
 
 console.log(validUserNames(["mark", "sdfhjhkjhkjhs", "carrie"]));
+
+//map array exercise
+
+function capitalizeFirstLetter(str) {
+  let capitalizedStr = str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+  return capitalizedStr;
+}
+
+console.log(capitalizeFirstLetter("this is a test"));
+
+function capitalizeEveryOtherWord(str) {
+  let capitalizedStr = str
+    .split(" ")
+    .map((word, index) => {
+      return index % 2 === 0 ? word.toUpperCase() : word;
+    })
+    .join(" ");
+  return capitalizedStr;
+}
+
+console.log(capitalizeEveryOtherWord("this is a test"));
+
+function replaceA(str) {
+  let newStr = str
+    .split("")
+    .map((x) => {
+      return x === "a" || x === "A" ? (x = "1") : (x = x);
+    })
+    .join("");
+  return newStr;
+}
+
+console.log(replaceA("this is A javascript test"));
