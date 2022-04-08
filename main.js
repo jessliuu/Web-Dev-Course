@@ -25,7 +25,7 @@ function validUserNames(usernames) {
 
 console.log(validUserNames(["mark", "sdfhjhkjhkjhs", "carrie"]));
 
-//map array exercise
+//map array exercise (found on internet)
 
 function capitalizeFirstLetter(str) {
   let capitalizedStr = str
