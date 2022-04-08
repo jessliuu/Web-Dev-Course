@@ -58,5 +58,3 @@ function replaceA(str) {
     .join("");
   return newStr;
 }
-
-console.log(replaceA("this is A javascript test"));
